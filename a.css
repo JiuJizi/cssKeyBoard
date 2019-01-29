@@ -1,0 +1,83 @@
+*{padding:0;margin:0;}
+body{background-size: cover; background:grey url(./1.jpg) no-repeat center center;height:100vh;}
+body{display: flex;justify-content: center;align-items: center;}
+body{-moz-user-select: none; -khtml-user-select:none; -webkit-user-select:none; -ms-user-select:none; user-select:none;}
+main{text-align: center;}
+.keyBoard{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;flex-direction: column;background-color: rgba(255,255,255,0.5)}
+.keyBoard div{display: flex;margin:7px 0px;font-size: 24px;text-align: center;}
+.keyBoard div kbd{color:white;width: 70px;height:70px;background-color: black;margin:0px 6px;border-radius: 6px;box-shadow: 5px 5px 8px 0px rgba(117,117,117,0.75);}
+.keyBoard div kbd:active{color:blue;box-shadow: none;}
+.keyBoard .punctuation{position: absolute;left:30px;top:11px;}
+.keyBoard .punctuationA{position: absolute;}
+.keyBoard .punctuationB{position: absolute;top:25px;}
+.keyBoard .row1 kbd:nth-child(12) .punctuation{top:5px;}
+.keyBoard kbd{position: relative;cursor:pointer}
+.keyBoard .numble{position: absolute;left: 29px;top: 2px;}
+.keyBoard .numbleA{position: absolute;}
+.keyBoard .numbleB{position: absolute;top:30px;}
+.keyBoard .row1 kbd:nth-child(7) .numbleA{top: 5px}
+.keyBoard .row1 kbd:nth-child(14){width:122px;font-size: 16px;}
+.keyBoard .delete{position: absolute;right:10px;top:20px;}
+.keyBoard .deleteA{position: absolute;right: 0px;}
+.keyBoard .deleteB{position: absolute;right:0px;top:25px;}
+.keyBoard .row2 kbd:nth-child(1){width:122px;font-size: 16px;}
+.keyBoard .tab{position: absolute;left:10px;top:15px;}
+.keyBoard .tabA{position: absolute;left:0px;}
+.keyBoard .tabB{position: absolute;left:0px;top:25px;}
+.keyBoard .punctuationLong{position: absolute;left:30px;top:4px;}
+.keyBoard .punctuationLongA{position: absolute;}
+.keyBoard .punctuationLongB{position: absolute;top:27px;}
+.keyBoard .letter{position: absolute;right:27px ;top:15%;}
+.keyBoard .row3 kbd:nth-child(11){font-size:17px;}
+.keyBoard .row3 kbd:nth-child(1){width: 137px}
+.keyBoard .row3 .capslockInner{font-size:19px;position: absolute;bottom:0px;left:10px;}
+.keyBoard .row3 kbd:nth-child(13){font-size:15px;width:137px;}
+.keyBoard .row4 .punctuation{font-size: 17px;}
+.keyBoard .row4 kbd:nth-child(1){font-size: 17px;width:178px;}
+.keyBoard .row4 kbd:nth-child(12){font-size: 17px;width:178px;}
+.keyBoard .shift1{position: absolute;left: 15px;top: 10px;}
+.keyBoard .shift2{position: absolute;left:130px;top: 10px;}
+.keyBoard .shift1 .shiftA{position: absolute;}
+.keyBoard .shift1 .shiftB{position: absolute;top:30px;}
+.keyBoard .shift2 .shiftA{position: absolute;left:18px}
+.keyBoard .shift2 .shiftB{position: absolute;top:30px;left:-15px;}
+.keyBoard .row5 kbd{font-size: 15px;}
+.keyBoard .row5 .fnInner{position: absolute;bottom: 10px;right: 37px;}
+.keyBoard .row5 .specialKbd1{position: absolute;bottom:10px;left:7px;}
+.keyBoard .row5 .specialKbd1 .specialKbdA{position: absolute;bottom:31px;left:37px;}
+.keyBoard .row5 .specialKbd1 .specialKbdB{position: absolute;}
+.keyBoard .row5 kbd:nth-child(4){width:91px;}
+.keyBoard .row5 kbd:nth-child(6){width:91px;}
+.keyBoard .row5 .space{width:398px;}
+.keyBoard .row5 kbd:nth-child(2) span.controlB{font-size: 13px;}
+.keyBoard .row5 kbd:nth-child(2) span.controlA{font-size:22px;}
+.keyBoard .row5 .control{position: absolute;bottom:25px;left:8px;}
+.keyBoard .row5 .controlA{position: absolute;bottom:13px;left:33px;}
+.keyBoard .row5 .controlB{position: absolute;}
+.keyBoard .row5 kbd:nth-child(3) span.option1B{font-size: 13px;}
+.keyBoard .row5 kbd:nth-child(3) span.option1A{font-size:19px;}
+.keyBoard .row5 .option1{position: absolute;bottom:25px;left:12px;}
+.keyBoard .row5 .option1A{position: absolute;bottom:15px;left:27px;}
+.keyBoard .row5 .option1B{position: absolute;}
+.keyBoard .row5 kbd:nth-child(4) span.command1B{font-size: 14px;}
+.keyBoard .row5 kbd:nth-child(4) span.command1A{font-size:25px;}
+.keyBoard .row5 .command1{position: absolute;bottom:25px;left:15px;}
+.keyBoard .row5 .command1A{position: absolute;bottom:10px;left:38px;}
+.keyBoard .row5 .command1B{position: absolute;}
+.keyBoard .row5 kbd:nth-child(6) span.command2B{font-size: 14px;}
+.keyBoard .row5 kbd:nth-child(6) span.command2A{font-size:25px;}
+.keyBoard .row5 .command2{position: absolute;bottom:25px;left:15px;}
+.keyBoard .row5 .command2A{position: absolute;bottom:10px;left:-2px;}
+.keyBoard .row5 .command2B{position: absolute;}
+.keyBoard .row5 kbd:nth-child(7) span.option2B{font-size: 13px;}
+.keyBoard .row5 kbd:nth-child(7) span.option2A{font-size:19px;}
+.keyBoard .row5 .option2{position: absolute;bottom:25px;left:12px;}
+.keyBoard .row5 .option2A{position: absolute;bottom:15px;}
+.keyBoard .row5 .option2B{position: absolute;}
+.keyBoard .row5 .directionKeys{width:256px;}
+.keyBoard .row5 .directionKeys1{position: relative;height: 70px;margin:0px;}
+.keyBoard .row5 .directionKeys1 .left{position:absolute;left:0px;bottom:0px;height: 35px;width:73px;}
+.keyBoard .row5 .directionKeys1 .right{position:absolute;right:0px;bottom:0px;height: 35px;width:73px;}
+.keyBoard .row5 .directionKeys1 .top{position:absolute;left:85px;top:0px;height: 33px;width:73px;border-radius: 6px 6px 0px 0px}
+.keyBoard .row5 .directionKeys1 .bottom{left:85px;bottom:-37px;height: 33px;width:73px;border-radius: 0px 0px 6px 6px}
+.keyBoard .row5 .directionKeys1 .directionKeysAll{position: absolute;right: 28px;top: 6px;}
